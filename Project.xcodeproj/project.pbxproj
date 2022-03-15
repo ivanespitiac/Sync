@@ -506,6 +506,44 @@
 		25A89F831F00ED7E008ADD4B /* Sync+ObjC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47FF6201F0002A3004A923A /* Sync+ObjC.swift */; };
 		25A89F841F00ED7F008ADD4B /* Sync+ObjC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47FF6201F0002A3004A923A /* Sync+ObjC.swift */; };
 		25A89F851F00ED7F008ADD4B /* Sync+ObjC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47FF6201F0002A3004A923A /* Sync+ObjC.swift */; };
+		2C89527927E10A6B00847E9C /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C89527827E10A6B00847E9C /* Package.swift */; };
+		2C89527C27E10D3900847E9C /* Sync+ObjC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47FF6201F0002A3004A923A /* Sync+ObjC.swift */; };
+		2C89527D27E10D3900847E9C /* NSArray+Sync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44968BF51DA0021300E71A53 /* NSArray+Sync.swift */; };
+		2C89527E27E10D3900847E9C /* NSPropertyDescription+Sync.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B212F31E87BD5D00C81949 /* NSPropertyDescription+Sync.m */; };
+		2C89527F27E10D3900847E9C /* NSEntityDescription+Sync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44968BF61DA0021300E71A53 /* NSEntityDescription+Sync.swift */; };
+		2C89528027E10D3900847E9C /* NSManagedObject+Sync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44968BF71DA0021300E71A53 /* NSManagedObject+Sync.swift */; };
+		2C89528127E10D3900847E9C /* NSManagedObject+PropertyMapperHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 4474092B1E87BA4E0035B8DC /* NSManagedObject+PropertyMapperHelpers.m */; };
+		2C89528227E10D3900847E9C /* NSManagedObject+Export.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447409291E87BA4E0035B8DC /* NSManagedObject+Export.swift */; };
+		2C89528327E10D3900847E9C /* NSManagedObjectContext+Sync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44968BF81DA0021300E71A53 /* NSManagedObjectContext+Sync.swift */; };
+		2C89528427E10D3900847E9C /* Sync+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14549A0A1E7C2E1000A77F2E /* Sync+Helpers.swift */; };
+		2C89528527E10D3900847E9C /* Sync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44968BF91DA0021300E71A53 /* Sync.swift */; };
+		2C89528627E10D3900847E9C /* Sync+NSPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142CD2AC1DEF3A01002FDABE /* Sync+NSPersistentContainer.swift */; };
+		2C89528727E10D3900847E9C /* Inflections.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE6861E87BC650068185B /* Inflections.m */; };
+		2C89528827E10D3900847E9C /* SyncResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AF6AFA1DFC3D88009E5BC4 /* SyncResult.swift */; };
+		2C89528927E10D3900847E9C /* Sync+NSManagedObjectContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D5255E1E7C1EC30063909F /* Sync+NSManagedObjectContext.swift */; };
+		2C89528A27E10D3900847E9C /* DataFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445D3BB81D9F932C007F9E26 /* DataFilter.swift */; };
+		2C89528B27E10D3900847E9C /* TestCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449828031D9F8F2D00E2BCA3 /* TestCheck.swift */; };
+		2C89528C27E10D3900847E9C /* PropertyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4474092D1E87BA4E0035B8DC /* PropertyMapper.m */; };
+		2C89528D27E10D3900847E9C /* Sync+DataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142CD2A31DEF39AE002FDABE /* Sync+DataStack.swift */; };
+		2C89528E27E10D3900847E9C /* DataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1467388B1E7ADBA700913C8E /* DataStack.swift */; };
+		2C89528F27E10D3900847E9C /* NSEntityDescription+PrimaryKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 445851F31E87BB590025434E /* NSEntityDescription+PrimaryKey.m */; };
+		2C89529027E10D3900847E9C /* NSDate+PropertyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D93BFF1E4E65C700DED595 /* NSDate+PropertyMapper.m */; };
+		2C89529327E10D3900847E9C /* NSDate+PropertyMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D93BFE1E4E65C700DED595 /* NSDate+PropertyMapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C89529427E10D3900847E9C /* Sync.h in Headers */ = {isa = PBXBuildFile; fileRef = 14E93C431DBCCD2800E3304E /* Sync.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C89529527E10D3900847E9C /* Sync.swift in Headers */ = {isa = PBXBuildFile; fileRef = 44968BF91DA0021300E71A53 /* Sync.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C89529627E10D3900847E9C /* Sync+DataStack.swift in Headers */ = {isa = PBXBuildFile; fileRef = 142CD2A31DEF39AE002FDABE /* Sync+DataStack.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C89529727E10D3900847E9C /* Sync+NSPersistentContainer.swift in Headers */ = {isa = PBXBuildFile; fileRef = 142CD2AC1DEF3A01002FDABE /* Sync+NSPersistentContainer.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C89529827E10D3900847E9C /* NSArray+Sync.swift in Headers */ = {isa = PBXBuildFile; fileRef = 44968BF51DA0021300E71A53 /* NSArray+Sync.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C89529927E10D3900847E9C /* NSEntityDescription+Sync.swift in Headers */ = {isa = PBXBuildFile; fileRef = 44968BF61DA0021300E71A53 /* NSEntityDescription+Sync.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C89529A27E10D3900847E9C /* NSManagedObject+Sync.swift in Headers */ = {isa = PBXBuildFile; fileRef = 44968BF71DA0021300E71A53 /* NSManagedObject+Sync.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C89529B27E10D3900847E9C /* PropertyMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 4474092C1E87BA4E0035B8DC /* PropertyMapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C89529C27E10D3900847E9C /* NSManagedObject+PropertyMapperHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 4474092A1E87BA4E0035B8DC /* NSManagedObject+PropertyMapperHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C89529D27E10D3900847E9C /* NSManagedObjectContext+Sync.swift in Headers */ = {isa = PBXBuildFile; fileRef = 44968BF81DA0021300E71A53 /* NSManagedObjectContext+Sync.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C89529E27E10D3900847E9C /* SyncResult.swift in Headers */ = {isa = PBXBuildFile; fileRef = 14AF6AFA1DFC3D88009E5BC4 /* SyncResult.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C89529F27E10D3900847E9C /* Inflections.h in Headers */ = {isa = PBXBuildFile; fileRef = 44CFE6851E87BC650068185B /* Inflections.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C8952A027E10D3900847E9C /* NSEntityDescription+PrimaryKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 445851F21E87BB590025434E /* NSEntityDescription+PrimaryKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C8952A127E10D3900847E9C /* NSPropertyDescription+Sync.h in Headers */ = {isa = PBXBuildFile; fileRef = 44B212F21E87BD5D00C81949 /* NSPropertyDescription+Sync.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C8952A227E10D3900847E9C /* DataStack.swift in Headers */ = {isa = PBXBuildFile; fileRef = 1467388B1E7ADBA700913C8E /* DataStack.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		445851BB1E87BAF50025434E /* DictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4458519C1E87BAF50025434E /* DictionaryTests.swift */; };
 		445851BC1E87BAF50025434E /* DictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4458519C1E87BAF50025434E /* DictionaryTests.swift */; };
 		445851BD1E87BAF50025434E /* DictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4458519C1E87BAF50025434E /* DictionaryTests.swift */; };
@@ -842,6 +880,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2C8952A427E10D3900847E9C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -998,6 +1045,9 @@
 		14E93C431DBCCD2800E3304E /* Sync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sync.h; sourceTree = "<group>"; };
 		1AFF18C91FE1F08800C4BC3D /* 457-products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "457-products.json"; sourceTree = "<group>"; };
 		1AFF18CA1FE1F08800C4BC3D /* 457-subcategories.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "457-subcategories.json"; sourceTree = "<group>"; };
+		2C89527827E10A6B00847E9C /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		2C8952A827E10D3900847E9C /* Sync-iOS-Objc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Sync-iOS-Objc.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C8952A927E10D3C00847E9C /* Sync-iOS copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Sync-iOS copy-Info.plist"; path = "/Users/ivan/Sync/Sync-iOS copy-Info.plist"; sourceTree = "<absolute>"; };
 		4458519C1E87BAF50025434E /* DictionaryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryTests.swift; sourceTree = "<group>"; };
 		4458519D1E87BAF50025434E /* ExportTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExportTests.swift; sourceTree = "<group>"; };
 		4458519E1E87BAF50025434E /* FillWithDictionaryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FillWithDictionaryTests.swift; sourceTree = "<group>"; };
@@ -1148,23 +1198,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2C89529127E10D3900847E9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1425D59A1CC65BEB00EC49D4 /* Source */ = {
+		1425D59A1CC65BEB00EC49D4 /* Sync */ = {
 			isa = PBXGroup;
 			children = (
 				445D3BB71D9F932C007F9E26 /* DataFilter */,
 				1467388A1E7ADBA700913C8E /* DataStack */,
-				14D93BFD1E4E65C700DED595 /* DateParser */,
-				44CFE6841E87BC650068185B /* Inflections */,
-				445851F11E87BB590025434E /* PrimaryKey */,
 				447409281E87BA4E0035B8DC /* PropertyMapper */,
 				44968BF41DA0021300E71A53 /* Sync */,
 				14E93C431DBCCD2800E3304E /* Sync.h */,
 				449828021D9F8F2D00E2BCA3 /* TestCheck */,
 			);
-			path = Source;
+			path = Sync;
 			sourceTree = "<group>";
 		};
 		1467388A1E7ADBA700913C8E /* DataStack */ = {
@@ -1178,11 +1232,13 @@
 		146D728A1AB782920058798C = {
 			isa = PBXGroup;
 			children = (
-				1425D59A1CC65BEB00EC49D4 /* Source */,
+				2C89527827E10A6B00847E9C /* Package.swift */,
+				2C89527727E10A0100847E9C /* Sources */,
 				14C136501AB7849300B7B07A /* Metadata */,
 				146D72AF1AB782920058798C /* Tests */,
 				146D72941AB782920058798C /* Products */,
 				515545DD1958EE5C50CA007A /* Frameworks */,
+				2C8952A927E10D3C00847E9C /* Sync-iOS copy-Info.plist */,
 			);
 			indentWidth = 4;
 			sourceTree = "<group>";
@@ -1198,6 +1254,7 @@
 				14241E7E1DBC39600042ED81 /* Sync.framework */,
 				14241E8B1DBC39690042ED81 /* Sync.framework */,
 				14241E981DBC39730042ED81 /* Sync.framework */,
+				2C8952A827E10D3900847E9C /* Sync-iOS-Objc.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1216,7 +1273,8 @@
 				14867DCF1E7AF4D2001D228A /* TestCheck */,
 				14867DD11E7AF4D2001D228A /* Vendor */,
 			);
-			path = Tests;
+			name = Tests;
+			path = Sources/Tests;
 			sourceTree = "<group>";
 		};
 		146D72B01AB782920058798C /* Supporting Files */ = {
@@ -1497,6 +1555,47 @@
 			path = DateParser;
 			sourceTree = "<group>";
 		};
+		2C89527727E10A0100847E9C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2C8952AA27E10D5400847E9C /* Sync-objc */,
+				1425D59A1CC65BEB00EC49D4 /* Sync */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		2C8952AA27E10D5400847E9C /* Sync-objc */ = {
+			isa = PBXGroup;
+			children = (
+				2C8952AC27E10DE700847E9C /* Sync */,
+				2C8952AB27E10DCF00847E9C /* PropertyMapper */,
+				445851F11E87BB590025434E /* PrimaryKey */,
+				44CFE6841E87BC650068185B /* Inflections */,
+				14D93BFD1E4E65C700DED595 /* DateParser */,
+			);
+			path = "Sync-objc";
+			sourceTree = "<group>";
+		};
+		2C8952AB27E10DCF00847E9C /* PropertyMapper */ = {
+			isa = PBXGroup;
+			children = (
+				4474092A1E87BA4E0035B8DC /* NSManagedObject+PropertyMapperHelpers.h */,
+				4474092B1E87BA4E0035B8DC /* NSManagedObject+PropertyMapperHelpers.m */,
+				4474092C1E87BA4E0035B8DC /* PropertyMapper.h */,
+				4474092D1E87BA4E0035B8DC /* PropertyMapper.m */,
+			);
+			path = PropertyMapper;
+			sourceTree = "<group>";
+		};
+		2C8952AC27E10DE700847E9C /* Sync */ = {
+			isa = PBXGroup;
+			children = (
+				44B212F21E87BD5D00C81949 /* NSPropertyDescription+Sync.h */,
+				44B212F31E87BD5D00C81949 /* NSPropertyDescription+Sync.m */,
+			);
+			path = Sync;
+			sourceTree = "<group>";
+		};
 		4458519B1E87BAF50025434E /* PropertyMapper */ = {
 			isa = PBXGroup;
 			children = (
@@ -1562,10 +1661,6 @@
 			isa = PBXGroup;
 			children = (
 				447409291E87BA4E0035B8DC /* NSManagedObject+Export.swift */,
-				4474092A1E87BA4E0035B8DC /* NSManagedObject+PropertyMapperHelpers.h */,
-				4474092B1E87BA4E0035B8DC /* NSManagedObject+PropertyMapperHelpers.m */,
-				4474092C1E87BA4E0035B8DC /* PropertyMapper.h */,
-				4474092D1E87BA4E0035B8DC /* PropertyMapper.m */,
 			);
 			path = PropertyMapper;
 			sourceTree = "<group>";
@@ -1577,8 +1672,6 @@
 				44968BF61DA0021300E71A53 /* NSEntityDescription+Sync.swift */,
 				44968BF71DA0021300E71A53 /* NSManagedObject+Sync.swift */,
 				44968BF81DA0021300E71A53 /* NSManagedObjectContext+Sync.swift */,
-				44B212F21E87BD5D00C81949 /* NSPropertyDescription+Sync.h */,
-				44B212F31E87BD5D00C81949 /* NSPropertyDescription+Sync.m */,
 				14AF6AFA1DFC3D88009E5BC4 /* SyncResult.swift */,
 				44968BF91DA0021300E71A53 /* Sync.swift */,
 				142CD2A31DEF39AE002FDABE /* Sync+DataStack.swift */,
@@ -1726,6 +1819,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2C89529227E10D3900847E9C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C89529327E10D3900847E9C /* NSDate+PropertyMapper.h in Headers */,
+				2C89529427E10D3900847E9C /* Sync.h in Headers */,
+				2C89529527E10D3900847E9C /* Sync.swift in Headers */,
+				2C89529627E10D3900847E9C /* Sync+DataStack.swift in Headers */,
+				2C89529727E10D3900847E9C /* Sync+NSPersistentContainer.swift in Headers */,
+				2C89529827E10D3900847E9C /* NSArray+Sync.swift in Headers */,
+				2C89529927E10D3900847E9C /* NSEntityDescription+Sync.swift in Headers */,
+				2C89529A27E10D3900847E9C /* NSManagedObject+Sync.swift in Headers */,
+				2C89529B27E10D3900847E9C /* PropertyMapper.h in Headers */,
+				2C89529C27E10D3900847E9C /* NSManagedObject+PropertyMapperHelpers.h in Headers */,
+				2C89529D27E10D3900847E9C /* NSManagedObjectContext+Sync.swift in Headers */,
+				2C89529E27E10D3900847E9C /* SyncResult.swift in Headers */,
+				2C89529F27E10D3900847E9C /* Inflections.h in Headers */,
+				2C8952A027E10D3900847E9C /* NSEntityDescription+PrimaryKey.h in Headers */,
+				2C8952A127E10D3900847E9C /* NSPropertyDescription+Sync.h in Headers */,
+				2C8952A227E10D3900847E9C /* DataStack.swift in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -1859,6 +1975,25 @@
 			productReference = 14975BF41DBC36960024901A /* macOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		2C89527A27E10D3900847E9C /* Sync-iOS-Objc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C8952A527E10D3900847E9C /* Build configuration list for PBXNativeTarget "Sync-iOS-Objc" */;
+			buildPhases = (
+				2C89527B27E10D3900847E9C /* Sources */,
+				2C89529127E10D3900847E9C /* Frameworks */,
+				2C89529227E10D3900847E9C /* Headers */,
+				2C8952A327E10D3900847E9C /* Resources */,
+				2C8952A427E10D3900847E9C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sync-iOS-Objc";
+			productName = "Sync-iOS";
+			productReference = 2C8952A827E10D3900847E9C /* Sync-iOS-Objc.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1927,6 +2062,7 @@
 				14241E8A1DBC39690042ED81 /* Sync-tvOS */,
 				14241E971DBC39730042ED81 /* Sync-macOS */,
 				14241E7D1DBC39600042ED81 /* Sync-watchOS */,
+				2C89527A27E10D3900847E9C /* Sync-iOS-Objc */,
 			);
 		};
 /* End PBXProject section */
@@ -2314,6 +2450,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2C8952A327E10D3900847E9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -2517,6 +2660,7 @@
 				CC86E0B62021704E00AA0947 /* DoublePrimaryKeys.xcdatamodeld in Sources */,
 				44CFE67E1E87BBE60068185B /* PrimaryKeyTests.m in Sources */,
 				14867EDB1E7AF4D2001D228A /* 157.xcdatamodeld in Sources */,
+				2C89527927E10A6B00847E9C /* Package.swift in Sources */,
 				44BAF23020CC165800188021 /* 137.xcdatamodeld in Sources */,
 				14867F201E7AF4D2001D228A /* OrderedSocial.xcdatamodeld in Sources */,
 				14867EDE1E7AF4D2001D228A /* 179.xcdatamodeld in Sources */,
@@ -2732,6 +2876,34 @@
 				14867F4F1E7AF4D2001D228A /* UpdateTests.swift in Sources */,
 				14867F251E7AF4D2001D228A /* Organizations.xcdatamodeld in Sources */,
 				14867ED71E7AF4D2001D228A /* 151-ordered-to-many.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C89527B27E10D3900847E9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C89527C27E10D3900847E9C /* Sync+ObjC.swift in Sources */,
+				2C89527D27E10D3900847E9C /* NSArray+Sync.swift in Sources */,
+				2C89527E27E10D3900847E9C /* NSPropertyDescription+Sync.m in Sources */,
+				2C89527F27E10D3900847E9C /* NSEntityDescription+Sync.swift in Sources */,
+				2C89528027E10D3900847E9C /* NSManagedObject+Sync.swift in Sources */,
+				2C89528127E10D3900847E9C /* NSManagedObject+PropertyMapperHelpers.m in Sources */,
+				2C89528227E10D3900847E9C /* NSManagedObject+Export.swift in Sources */,
+				2C89528327E10D3900847E9C /* NSManagedObjectContext+Sync.swift in Sources */,
+				2C89528427E10D3900847E9C /* Sync+Helpers.swift in Sources */,
+				2C89528527E10D3900847E9C /* Sync.swift in Sources */,
+				2C89528627E10D3900847E9C /* Sync+NSPersistentContainer.swift in Sources */,
+				2C89528727E10D3900847E9C /* Inflections.m in Sources */,
+				2C89528827E10D3900847E9C /* SyncResult.swift in Sources */,
+				2C89528927E10D3900847E9C /* Sync+NSManagedObjectContext.swift in Sources */,
+				2C89528A27E10D3900847E9C /* DataFilter.swift in Sources */,
+				2C89528B27E10D3900847E9C /* TestCheck.swift in Sources */,
+				2C89528C27E10D3900847E9C /* PropertyMapper.m in Sources */,
+				2C89528D27E10D3900847E9C /* Sync+DataStack.swift in Sources */,
+				2C89528E27E10D3900847E9C /* DataStack.swift in Sources */,
+				2C89528F27E10D3900847E9C /* NSEntityDescription+PrimaryKey.m in Sources */,
+				2C89529027E10D3900847E9C /* NSDate+PropertyMapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3223,6 +3395,64 @@
 			};
 			name = Release;
 		};
+		2C8952A627E10D3900847E9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Sync-iOS copy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = club.syncdb.sync;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2C8952A727E10D3900847E9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Sync-iOS copy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = club.syncdb.sync;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -3294,6 +3524,15 @@
 			buildConfigurations = (
 				14975BFA1DBC36960024901A /* Debug */,
 				14975BFB1DBC36960024901A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C8952A527E10D3900847E9C /* Build configuration list for PBXNativeTarget "Sync-iOS-Objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C8952A627E10D3900847E9C /* Debug */,
+				2C8952A727E10D3900847E9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
