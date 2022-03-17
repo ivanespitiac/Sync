@@ -1,6 +1,7 @@
 import CoreData
 
 extension NSEntityDescription {
+    
     /**
      Finds the relationships for the current entity.
      - returns The list of relationships for the current entity.

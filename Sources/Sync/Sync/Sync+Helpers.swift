@@ -1,3 +1,6 @@
+import CoreData
+import Foundation
+
 extension Sync {
     /// Fetches a managed object for the provided primary key in an specific entity.
     ///

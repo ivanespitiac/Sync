@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -33,25 +33,33 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		2C8952D927E1552E00847E9C /* Sync.h in Headers */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* Sync.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C8952DE27E1552E00847E9C /* NSEntityDescription+PrimaryKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C8952D627E154C600847E9C /* NSEntityDescription+PrimaryKey.h */; };
+		2C8952E027E1552E00847E9C /* NSManagedObject+PropertyMapperHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C8952CE27E1521400847E9C /* NSManagedObject+PropertyMapperHelpers.h */; };
+		2C8952E127E1552E00847E9C /* PropertyMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C8952CF27E1521400847E9C /* PropertyMapper.h */; };
+		2C8952E427E1552E00847E9C /* NSPropertyDescription+Sync.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C8952D227E1521B00847E9C /* NSPropertyDescription+Sync.h */; };
+		2C8952E627E1565400847E9C /* NSDate+PropertyMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C8952E527E1565400847E9C /* NSDate+PropertyMapper.h */; };
+		2C8952E827E1567700847E9C /* Inflections.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C8952E727E1567700847E9C /* Inflections.h */; };
+		2CFEA2F627E237C20029A711 /* Sync_iOS_Objc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Sync::Sync-iOS-Objc::Product" /* Sync_iOS_Objc.framework */; };
 		OBJ_100 /* NSPropertyDescription+Sync.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* NSPropertyDescription+Sync.m */; };
 		OBJ_107 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_118 /* SyncTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* SyncTests.swift */; };
 		OBJ_120 /* Sync_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Sync::Sync-iOS::Product" /* Sync_iOS.framework */; };
-		OBJ_75 /* DataFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* DataFilter.swift */; };
-		OBJ_76 /* DataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* DataStack.swift */; };
-		OBJ_77 /* NSManagedObject+Export.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* NSManagedObject+Export.swift */; };
-		OBJ_78 /* NSArray+Sync.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* NSArray+Sync.swift */; };
-		OBJ_79 /* NSEntityDescription+Sync.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* NSEntityDescription+Sync.swift */; };
-		OBJ_80 /* NSManagedObject+Sync.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* NSManagedObject+Sync.swift */; };
-		OBJ_81 /* NSManagedObjectContext+Sync.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* NSManagedObjectContext+Sync.swift */; };
-		OBJ_82 /* Sync+DataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* Sync+DataStack.swift */; };
-		OBJ_83 /* Sync+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* Sync+Helpers.swift */; };
-		OBJ_84 /* Sync+NSManagedObjectContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* Sync+NSManagedObjectContext.swift */; };
-		OBJ_85 /* Sync+NSPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* Sync+NSPersistentContainer.swift */; };
-		OBJ_86 /* Sync+ObjC.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* Sync+ObjC.swift */; };
-		OBJ_87 /* Sync.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* Sync.swift */; };
-		OBJ_88 /* SyncResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* SyncResult.swift */; };
-		OBJ_89 /* TestCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* TestCheck.swift */; };
+		OBJ_75 /* DataFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* DataFilter.swift */; };
+		OBJ_76 /* DataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* DataStack.swift */; };
+		OBJ_77 /* NSManagedObject+Export.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* NSManagedObject+Export.swift */; };
+		OBJ_78 /* NSArray+Sync.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* NSArray+Sync.swift */; };
+		OBJ_79 /* NSEntityDescription+Sync.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* NSEntityDescription+Sync.swift */; };
+		OBJ_80 /* NSManagedObject+Sync.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* NSManagedObject+Sync.swift */; };
+		OBJ_81 /* NSManagedObjectContext+Sync.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* NSManagedObjectContext+Sync.swift */; };
+		OBJ_82 /* Sync+DataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* Sync+DataStack.swift */; };
+		OBJ_83 /* Sync+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* Sync+Helpers.swift */; };
+		OBJ_84 /* Sync+NSManagedObjectContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* Sync+NSManagedObjectContext.swift */; };
+		OBJ_85 /* Sync+NSPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* Sync+NSPersistentContainer.swift */; };
+		OBJ_86 /* Sync+ObjC.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* Sync+ObjC.swift */; };
+		OBJ_87 /* Sync.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* Sync.swift */; };
+		OBJ_88 /* SyncResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* SyncResult.swift */; };
+		OBJ_89 /* TestCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* TestCheck.swift */; };
 		OBJ_95 /* NSDate+PropertyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* NSDate+PropertyMapper.m */; };
 		OBJ_96 /* Inflections.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* Inflections.m */; };
 		OBJ_97 /* NSEntityDescription+PrimaryKey.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* NSEntityDescription+PrimaryKey.m */; };
@@ -60,28 +68,28 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2C8952AD27E10E9700847E9C /* PBXContainerItemProxy */ = {
+		2C8952B227E115A300847E9C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Sync::Sync-iOS";
 			remoteInfo = "Sync-iOS";
 		};
-		2C8952AE27E10E9700847E9C /* PBXContainerItemProxy */ = {
+		2C8952B327E115A300847E9C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Sync::Sync-iOS";
 			remoteInfo = "Sync-iOS";
 		};
-		2C8952AF27E10E9700847E9C /* PBXContainerItemProxy */ = {
+		2C8952B427E115A300847E9C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Sync::Sync-iOS-Objc";
 			remoteInfo = "Sync-iOS-Objc";
 		};
-		2C8952B027E10E9700847E9C /* PBXContainerItemProxy */ = {
+		2C8952B527E115A300847E9C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -91,21 +99,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		OBJ_11 /* DataFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFilter.swift; sourceTree = "<group>"; };
-		OBJ_13 /* DataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStack.swift; sourceTree = "<group>"; };
-		OBJ_15 /* NSManagedObject+Export.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+Export.swift"; sourceTree = "<group>"; };
-		OBJ_17 /* NSArray+Sync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSArray+Sync.swift"; sourceTree = "<group>"; };
-		OBJ_18 /* NSEntityDescription+Sync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSEntityDescription+Sync.swift"; sourceTree = "<group>"; };
-		OBJ_19 /* NSManagedObject+Sync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+Sync.swift"; sourceTree = "<group>"; };
-		OBJ_20 /* NSManagedObjectContext+Sync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Sync.swift"; sourceTree = "<group>"; };
-		OBJ_21 /* Sync+DataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sync+DataStack.swift"; sourceTree = "<group>"; };
-		OBJ_22 /* Sync+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sync+Helpers.swift"; sourceTree = "<group>"; };
-		OBJ_23 /* Sync+NSManagedObjectContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sync+NSManagedObjectContext.swift"; sourceTree = "<group>"; };
-		OBJ_24 /* Sync+NSPersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sync+NSPersistentContainer.swift"; sourceTree = "<group>"; };
-		OBJ_25 /* Sync+ObjC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sync+ObjC.swift"; sourceTree = "<group>"; };
-		OBJ_26 /* Sync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sync.swift; sourceTree = "<group>"; };
-		OBJ_27 /* SyncResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncResult.swift; sourceTree = "<group>"; };
-		OBJ_29 /* TestCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCheck.swift; sourceTree = "<group>"; };
+		2C8952CE27E1521400847E9C /* NSManagedObject+PropertyMapperHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+PropertyMapperHelpers.h"; sourceTree = "<group>"; };
+		2C8952CF27E1521400847E9C /* PropertyMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyMapper.h; sourceTree = "<group>"; };
+		2C8952D227E1521B00847E9C /* NSPropertyDescription+Sync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSPropertyDescription+Sync.h"; sourceTree = "<group>"; };
+		2C8952D627E154C600847E9C /* NSEntityDescription+PrimaryKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSEntityDescription+PrimaryKey.h"; sourceTree = "<group>"; };
+		2C8952E527E1565400847E9C /* NSDate+PropertyMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+PropertyMapper.h"; sourceTree = "<group>"; };
+		2C8952E727E1567700847E9C /* Inflections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Inflections.h; sourceTree = "<group>"; };
+		OBJ_10 /* DataFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFilter.swift; sourceTree = "<group>"; };
+		OBJ_12 /* DataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStack.swift; sourceTree = "<group>"; };
+		OBJ_14 /* NSManagedObject+Export.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+Export.swift"; sourceTree = "<group>"; };
+		OBJ_16 /* NSArray+Sync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSArray+Sync.swift"; sourceTree = "<group>"; };
+		OBJ_17 /* NSEntityDescription+Sync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSEntityDescription+Sync.swift"; sourceTree = "<group>"; };
+		OBJ_18 /* NSManagedObject+Sync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+Sync.swift"; sourceTree = "<group>"; };
+		OBJ_19 /* NSManagedObjectContext+Sync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Sync.swift"; sourceTree = "<group>"; };
+		OBJ_20 /* Sync+DataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sync+DataStack.swift"; sourceTree = "<group>"; };
+		OBJ_21 /* Sync+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sync+Helpers.swift"; sourceTree = "<group>"; };
+		OBJ_22 /* Sync+NSManagedObjectContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sync+NSManagedObjectContext.swift"; sourceTree = "<group>"; };
+		OBJ_23 /* Sync+NSPersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sync+NSPersistentContainer.swift"; sourceTree = "<group>"; };
+		OBJ_24 /* Sync+ObjC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sync+ObjC.swift"; sourceTree = "<group>"; };
+		OBJ_25 /* Sync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sync.swift; sourceTree = "<group>"; };
+		OBJ_26 /* SyncResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncResult.swift; sourceTree = "<group>"; };
+		OBJ_28 /* TestCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCheck.swift; sourceTree = "<group>"; };
+		OBJ_30 /* Sync.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sync.h; sourceTree = "<group>"; };
 		OBJ_32 /* NSDate+PropertyMapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+PropertyMapper.m"; sourceTree = "<group>"; };
 		OBJ_34 /* Inflections.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Inflections.m; sourceTree = "<group>"; };
 		OBJ_36 /* NSEntityDescription+PrimaryKey.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSEntityDescription+PrimaryKey.m"; sourceTree = "<group>"; };
@@ -128,7 +143,6 @@
 		OBJ_60 /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
 		OBJ_61 /* Sync-iOS copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sync-iOS copy-Info.plist"; sourceTree = "<group>"; };
 		OBJ_62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		OBJ_9 /* Sync.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sync.h; sourceTree = "<group>"; };
 		"Sync::Sync-iOS-Objc::Product" /* Sync_iOS_Objc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Sync_iOS_Objc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Sync::Sync-iOS::Product" /* Sync_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Sync_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Sync::iOSTests::Product" /* iOSTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -154,65 +168,66 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
+				2CFEA2F627E237C20029A711 /* Sync_iOS_Objc.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		OBJ_10 /* DataFilter */ = {
+		2CFEA2F527E237C20029A711 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_11 /* DataFilter.swift */,
 			);
-			path = DataFilter;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		OBJ_12 /* DataStack */ = {
+		OBJ_11 /* DataStack */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_13 /* DataStack.swift */,
+				OBJ_12 /* DataStack.swift */,
 			);
 			path = DataStack;
 			sourceTree = "<group>";
 		};
-		OBJ_14 /* PropertyMapper */ = {
+		OBJ_13 /* PropertyMapper */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_15 /* NSManagedObject+Export.swift */,
+				OBJ_14 /* NSManagedObject+Export.swift */,
 			);
 			path = PropertyMapper;
 			sourceTree = "<group>";
 		};
-		OBJ_16 /* Sync */ = {
+		OBJ_15 /* Sync */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_17 /* NSArray+Sync.swift */,
-				OBJ_18 /* NSEntityDescription+Sync.swift */,
-				OBJ_19 /* NSManagedObject+Sync.swift */,
-				OBJ_20 /* NSManagedObjectContext+Sync.swift */,
-				OBJ_21 /* Sync+DataStack.swift */,
-				OBJ_22 /* Sync+Helpers.swift */,
-				OBJ_23 /* Sync+NSManagedObjectContext.swift */,
-				OBJ_24 /* Sync+NSPersistentContainer.swift */,
-				OBJ_25 /* Sync+ObjC.swift */,
-				OBJ_26 /* Sync.swift */,
-				OBJ_27 /* SyncResult.swift */,
+				OBJ_16 /* NSArray+Sync.swift */,
+				OBJ_17 /* NSEntityDescription+Sync.swift */,
+				OBJ_18 /* NSManagedObject+Sync.swift */,
+				OBJ_19 /* NSManagedObjectContext+Sync.swift */,
+				OBJ_20 /* Sync+DataStack.swift */,
+				OBJ_21 /* Sync+Helpers.swift */,
+				OBJ_22 /* Sync+NSManagedObjectContext.swift */,
+				OBJ_23 /* Sync+NSPersistentContainer.swift */,
+				OBJ_24 /* Sync+ObjC.swift */,
+				OBJ_25 /* Sync.swift */,
+				OBJ_26 /* SyncResult.swift */,
 			);
 			path = Sync;
 			sourceTree = "<group>";
 		};
-		OBJ_28 /* TestCheck */ = {
+		OBJ_27 /* TestCheck */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_29 /* TestCheck.swift */,
+				OBJ_28 /* TestCheck.swift */,
 			);
 			path = TestCheck;
 			sourceTree = "<group>";
 		};
-		OBJ_30 /* Sync-iOS-Objc */ = {
+		OBJ_29 /* Sync-iOS-Objc */ = {
 			isa = PBXGroup;
 			children = (
+				OBJ_30 /* Sync.h */,
 				OBJ_31 /* DateParser */,
 				OBJ_33 /* Inflections */,
 				OBJ_35 /* PrimaryKey */,
@@ -226,6 +241,7 @@
 		OBJ_31 /* DateParser */ = {
 			isa = PBXGroup;
 			children = (
+				2C8952E527E1565400847E9C /* NSDate+PropertyMapper.h */,
 				OBJ_32 /* NSDate+PropertyMapper.m */,
 			);
 			path = DateParser;
@@ -234,6 +250,7 @@
 		OBJ_33 /* Inflections */ = {
 			isa = PBXGroup;
 			children = (
+				2C8952E727E1567700847E9C /* Inflections.h */,
 				OBJ_34 /* Inflections.m */,
 			);
 			path = Inflections;
@@ -242,6 +259,7 @@
 		OBJ_35 /* PrimaryKey */ = {
 			isa = PBXGroup;
 			children = (
+				2C8952D627E154C600847E9C /* NSEntityDescription+PrimaryKey.h */,
 				OBJ_36 /* NSEntityDescription+PrimaryKey.m */,
 			);
 			path = PrimaryKey;
@@ -250,6 +268,8 @@
 		OBJ_37 /* PropertyMapper */ = {
 			isa = PBXGroup;
 			children = (
+				2C8952CE27E1521400847E9C /* NSManagedObject+PropertyMapperHelpers.h */,
+				2C8952CF27E1521400847E9C /* PropertyMapper.h */,
 				OBJ_38 /* NSManagedObject+PropertyMapperHelpers.m */,
 				OBJ_39 /* PropertyMapper.m */,
 			);
@@ -259,6 +279,7 @@
 		OBJ_40 /* Sync */ = {
 			isa = PBXGroup;
 			children = (
+				2C8952D227E1521B00847E9C /* NSPropertyDescription+Sync.h */,
 				OBJ_41 /* NSPropertyDescription+Sync.m */,
 			);
 			path = Sync;
@@ -290,7 +311,7 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -311,15 +332,15 @@
 				OBJ_60 /* CONTRIBUTING.md */,
 				OBJ_61 /* Sync-iOS copy-Info.plist */,
 				OBJ_62 /* Info.plist */,
+				2CFEA2F527E237C20029A711 /* Frameworks */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				OBJ_8 /* Sync-iOS */,
-				OBJ_30 /* Sync-iOS-Objc */,
+				OBJ_29 /* Sync-iOS-Objc */,
 			);
 			name = Sources;
 			sourceTree = SOURCE_ROOT;
@@ -327,18 +348,42 @@
 		OBJ_8 /* Sync-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_9 /* Sync.h */,
-				OBJ_10 /* DataFilter */,
-				OBJ_12 /* DataStack */,
-				OBJ_14 /* PropertyMapper */,
-				OBJ_16 /* Sync */,
-				OBJ_28 /* TestCheck */,
+				OBJ_9 /* DataFilter */,
+				OBJ_11 /* DataStack */,
+				OBJ_13 /* PropertyMapper */,
+				OBJ_15 /* Sync */,
+				OBJ_27 /* TestCheck */,
 			);
 			name = "Sync-iOS";
 			path = Sources/Sync;
 			sourceTree = SOURCE_ROOT;
 		};
+		OBJ_9 /* DataFilter */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_10 /* DataFilter.swift */,
+			);
+			path = DataFilter;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2C8952D827E1551E00847E9C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C8952D927E1552E00847E9C /* Sync.h in Headers */,
+				2C8952DE27E1552E00847E9C /* NSEntityDescription+PrimaryKey.h in Headers */,
+				2C8952E827E1567700847E9C /* Inflections.h in Headers */,
+				2C8952E027E1552E00847E9C /* NSManagedObject+PropertyMapperHelpers.h in Headers */,
+				2C8952E627E1565400847E9C /* NSDate+PropertyMapper.h in Headers */,
+				2C8952E127E1552E00847E9C /* PropertyMapper.h in Headers */,
+				2C8952E427E1552E00847E9C /* NSPropertyDescription+Sync.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		"Sync::SwiftPMPackageDescription" /* SyncPackageDescription */ = {
@@ -375,6 +420,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_91 /* Build configuration list for PBXNativeTarget "Sync-iOS-Objc" */;
 			buildPhases = (
+				2C8952D827E1551E00847E9C /* Headers */,
 				OBJ_94 /* Sources */,
 				OBJ_101 /* Frameworks */,
 			);
@@ -414,13 +460,13 @@
 				LastUpgradeCheck = 9999;
 			};
 			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "Sync" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_45 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -493,22 +539,22 @@
 		OBJ_112 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Sync::iOSTests" /* iOSTests */;
-			targetProxy = 2C8952B027E10E9700847E9C /* PBXContainerItemProxy */;
+			targetProxy = 2C8952B527E115A300847E9C /* PBXContainerItemProxy */;
 		};
 		OBJ_121 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Sync::Sync-iOS" /* Sync-iOS */;
-			targetProxy = 2C8952AD27E10E9700847E9C /* PBXContainerItemProxy */;
+			targetProxy = 2C8952B227E115A300847E9C /* PBXContainerItemProxy */;
 		};
 		OBJ_67 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Sync::Sync-iOS" /* Sync-iOS */;
-			targetProxy = 2C8952AE27E10E9700847E9C /* PBXContainerItemProxy */;
+			targetProxy = 2C8952B327E115A300847E9C /* PBXContainerItemProxy */;
 		};
 		OBJ_69 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Sync::Sync-iOS-Objc" /* Sync-iOS-Objc */;
-			targetProxy = 2C8952AF27E10E9700847E9C /* PBXContainerItemProxy */;
+			targetProxy = 2C8952B427E115A300847E9C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -557,7 +603,11 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Sync.xcodeproj/iOSTests_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -584,7 +634,11 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Sync.xcodeproj/iOSTests_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -645,7 +699,8 @@
 				SUPPORTED_PLATFORMS = "$(AVAILABLE_PLATFORMS)";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				USE_HEADERMAP = NO;
 			};
 			name = Release;
@@ -665,7 +720,6 @@
 		OBJ_72 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
 				ENABLE_TESTABILITY = YES;
@@ -676,8 +730,11 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Sync.xcodeproj/Sync_iOS_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
@@ -696,7 +753,6 @@
 		OBJ_73 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
 				ENABLE_TESTABILITY = YES;
@@ -707,8 +763,11 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Sync.xcodeproj/Sync_iOS_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
@@ -741,8 +800,11 @@
 				);
 				INFOPLIST_FILE = Sync.xcodeproj/Sync_iOS_Objc_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
@@ -774,8 +836,11 @@
 				);
 				INFOPLIST_FILE = Sync.xcodeproj/Sync_iOS_Objc_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";

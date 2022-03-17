@@ -1,7 +1,6 @@
 import CoreData
 
-
-public protocol SyncDelegate: class {
+public protocol SyncDelegate: AnyObject {
     /// Called before the JSON is used to create a new NSManagedObject.
     ///
     /// - parameter sync:        The Sync operation.
@@ -13,8 +12,8 @@ public protocol SyncDelegate: class {
     func sync(_ sync: Sync, willInsert json: [String: Any], in entityNamed: String, parent: NSManagedObject?) -> [String: Any]
 }
 
-@objcMembers
-@objc public class Sync: Operation {
+public class Sync: Operation {
+    
     public weak var delegate: SyncDelegate?
 
     public struct OperationOptions: OptionSet {

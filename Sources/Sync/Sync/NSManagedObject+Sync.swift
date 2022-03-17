@@ -29,12 +29,14 @@ extension NSManagedObject {
      - parameter dataStack: The DataStack instance.
      */
     func sync_fill(with dictionary: [String: Any], parent: NSManagedObject?, parentRelationship: NSRelationshipDescription?, context: NSManagedObjectContext, operations: Sync.OperationOptions, shouldContinueBlock: (() -> Bool)?, objectJSONBlock: ((_ objectJSON: [String: Any]) -> [String: Any])?) {
-        hyp_fill(with: dictionary)
+        
+        hyp_fill(withDictionary: dictionary)
 
         for relationship in entity.sync_relationships() {
+            
             let suffix = relationship.isToMany ? "_ids" : "_id"
-            let constructedKeyName = relationship.name.hyp_snakeCase() + suffix
-            let keyName = relationship.customKey ?? constructedKeyName
+            let constructedKeyName = relationship.name.camelCaseToSnakeCase() + suffix
+            let keyName = relationship.customKey() ?? constructedKeyName
 
             if relationship.isToMany {
                 var children: Any?
@@ -210,7 +212,7 @@ extension NSManagedObject {
         let updatedOperations = operations.relationshipOperations()
 
         var children: [[String: Any]]?
-        let childrenIsNull = (relationship.customKey as Any?) is NSNull || dictionary[relationship.name.hyp_snakeCase()] is NSNull || dictionary[relationship.name] is NSNull
+        let childrenIsNull = relationship.customKey() == nil || dictionary[relationship.name.camelCaseToSnakeCase()] is NSNull || dictionary[relationship.name] is NSNull
         if childrenIsNull {
             children = [[String: Any]]()
 
@@ -218,7 +220,7 @@ extension NSManagedObject {
                 setValue(nil, forKey: relationship.name)
             }
         } else {
-            if let customRelationshipName = relationship.customKey {
+            if let customRelationshipName = relationship.customKey() {
                 if customRelationshipName.contains(".") {
                     var rootObject: [String: Any]? = dictionary
                     let deepMappingKeys = customRelationshipName.split(separator: ".").map { String($0)}
@@ -234,7 +236,7 @@ extension NSManagedObject {
                 } else {
                     children = dictionary[customRelationshipName] as? [[String: Any]]
                 }
-            } else if let result = dictionary[relationship.name.hyp_snakeCase()] as? [[String: Any]] {
+            } else if let result = dictionary[relationship.name.camelCaseToSnakeCase()] as? [[String: Any]] {
                 children = result
             } else if let result = dictionary[relationship.name] as? [[String: Any]] {
                 children = result
@@ -316,7 +318,7 @@ extension NSManagedObject {
                     // Required in order to convert the JSON IDs into the same type as the ones Core Data expects. If the local primary key
                     // is of type Date, then we need to convert the array of strings in the JSON to be an array of dates.
                     // More info: https://github.com/3lvis/Sync/pull/477
-                    let ids = childrenIDs.compactMap { value(forAttributeDescription: primaryKeyAttribute, usingRemoteValue: $0) }
+                    let ids = childrenIDs.compactMap { value(for: primaryKeyAttribute, usingRemoteValue: $0) }
                     childPredicate = NSPredicate(format: "ANY %K IN %@ OR %K = %@", entity.sync_localPrimaryKey(), ids, inverseEntityName, self)
                 }
             }
@@ -389,7 +391,7 @@ extension NSManagedObject {
         var filteredObjectDictionary: [String: Any]?
         var jsonContainsRelationship = false
 
-        if let customRelationshipName = relationship.customKey {
+        if let customRelationshipName = relationship.customKey() {
             if customRelationshipName.contains(".") {
                 var rootObject: [String: Any]? = dictionary
                 let deepMappingKeys = customRelationshipName.split(separator: ".").map { String($0)}
@@ -407,7 +409,7 @@ extension NSManagedObject {
                 filteredObjectDictionary = dictionary[customRelationshipName] as? [String: Any]
                 jsonContainsRelationship = dictionary[customRelationshipName] != nil
             }
-        } else if let result = dictionary[relationship.name.hyp_snakeCase()] as? [String: Any] {
+        } else if let result = dictionary[relationship.name.camelCaseToSnakeCase()] as? [String: Any] {
             filteredObjectDictionary = result
         } else if let result = dictionary[relationship.name] as? [String: Any] {
             filteredObjectDictionary = result
@@ -415,7 +417,7 @@ extension NSManagedObject {
 
         // Check if the JSON contains key, so we know if we should delete null values
         if !jsonContainsRelationship {
-            jsonContainsRelationship = dictionary[relationship.name.hyp_snakeCase()] != nil || dictionary[relationship.name] != nil
+            jsonContainsRelationship = dictionary[relationship.name.camelCaseToSnakeCase()] != nil || dictionary[relationship.name] != nil
         }
 
         if let toOneObjectDictionary = filteredObjectDictionary {
