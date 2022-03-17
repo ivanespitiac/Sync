@@ -1435,6 +1435,14 @@
 		2C89527727E10A0100847E9C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				2CDA47A627E38C550088AC31 /* Sync-iOS */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		2CDA47A627E38C550088AC31 /* Sync-iOS */ = {
+			isa = PBXGroup;
+			children = (
 				2CFEA32B27E292080029A711 /* EntityDescription */,
 				2CFEA32427E291A00029A711 /* Inflections */,
 				445D3BB71D9F932C007F9E26 /* DataFilter */,
@@ -1443,7 +1451,7 @@
 				44968BF41DA0021300E71A53 /* Sync */,
 				449828021D9F8F2D00E2BCA3 /* TestCheck */,
 			);
-			path = Sources;
+			path = "Sync-iOS";
 			sourceTree = "<group>";
 		};
 		2CFEA32427E291A00029A711 /* Inflections */ = {
@@ -1541,8 +1549,7 @@
 				E47FF6201F0002A3004A923A /* Sync+ObjC.swift */,
 				2CFEA31227E290410029A711 /* NSManagedObject+PropertyMapperHelpers.swift */,
 			);
-			name = Sync;
-			path = Sync/Sync;
+			path = Sync;
 			sourceTree = "<group>";
 		};
 		449828021D9F8F2D00E2BCA3 /* TestCheck */ = {

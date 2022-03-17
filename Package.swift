@@ -12,7 +12,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "Sync",
-            targets: ["Sync-iOS", "Sync-iOS-Objc"]),
+            targets: ["Sync-iOS"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -24,11 +24,7 @@ let package = Package(
         .target(
             name: "Sync-iOS",
             dependencies: [],
-            path: "Sources/Sync"),
-        .target(
-            name: "Sync-iOS-Objc",
-            dependencies: [],
-            path: "Sources/Sync-objc"),
+            path: "Sources/Sync-iOS"),
         .testTarget(
             name: "iOSTests",
             dependencies: ["Sync-iOS"],
