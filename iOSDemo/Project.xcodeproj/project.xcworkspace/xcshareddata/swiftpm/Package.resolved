@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
+        "state": {
+          "branch": "master",
+          "revision": "6eeff3c57e02f07c8494433aed8bf90532010089",
+          "version": null
+        }
+      },
+      {
+        "package": "Sync",
+        "repositoryURL": "https://github.com/ivanespitiac/Sync.git",
+        "state": {
+          "branch": "master",
+          "revision": "05a6fb568a0d750c2e48e5278bc0b4f6144175ad",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
