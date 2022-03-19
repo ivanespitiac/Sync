@@ -33,14 +33,18 @@ class ItemsController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: UITableViewCell.self), for: indexPath)
+                
         let user = self.users[indexPath.row]
-        cell.textLabel?.text = user.name
+        let beer = user.beers?.allObjects.first as? Beer
+        
+        cell.textLabel?.text = "\(user.name ?? "") \(user.beers?.count ?? 0) \(beer?.name ?? "")"
 
         return cell
     }
 
     @objc func refresh() {
-        self.fetcher.syncUsingNetworking { result in
+        
+        self.fetcher.syncUsingLocalJSON { result in
             switch result {
             case .success:
                 self.users = self.fetcher.fetchLocalUsers()
@@ -49,5 +53,15 @@ class ItemsController: UITableViewController {
                 print(error)
             }
         }
+        
+        /**self.fetcher.syncUsingAlamofire { result in
+            switch result {
+            case .success:
+                self.users = self.fetcher.fetchLocalUsers()
+                self.tableView.reloadData()
+            case .failure(let error):
+                print(error)
+            }
+        }**/
     }
 }
