@@ -15,20 +15,14 @@ import CoreData
 }
 
 @objc public class DataStack: NSObject {
+    
     private var storeType = DataStackStoreType.sqLite
-
     private var storeName: String?
-
     private var modelName = ""
-
     private var modelBundle = Bundle.main
-
     private var model: NSManagedObjectModel
-
     private var containerURL = FileManager.sqliteDirectoryURL
-
     private let backgroundContextName = "DataStack.backgroundContextName"
-
     private let disposableContextName = "DataStack.disposableContextName"
 
     /**
@@ -66,7 +60,7 @@ import CoreData
     @objc public private(set) lazy var persistentStoreCoordinator: NSPersistentStoreCoordinator = {
         let persistentStoreCoordinator = NSPersistentStoreCoordinator(managedObjectModel: self.model)
         try! persistentStoreCoordinator.addPersistentStore(storeType: self.storeType, bundle: self.modelBundle, modelName: self.modelName, storeName: self.storeName, containerURL: self.containerURL)
-
+        
         return persistentStoreCoordinator
     }()
 
@@ -405,6 +399,18 @@ import CoreData
     private static func performSelectorForBackgroundContext() -> Selector {
         return TestCheck.isTesting ? NSSelectorFromString("performBlockAndWait:") : NSSelectorFromString("performBlock:")
     }
+    
+    /**
+     Migration to iCloud func
+     */
+    func migrateToICloud(completion: @escaping (_ result: Bool) -> Void) {
+        self.migrateToICloudIfNeeded(
+            modelName: self.modelName,
+            containerURL: self.containerURL,
+            model: self.model,
+            completion: completion)
+    }
+    
 }
 
 extension NSPersistentStoreCoordinator {
