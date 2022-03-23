@@ -403,7 +403,7 @@ import CoreData
     /**
      Migration to iCloud func
      */
-    func migrateToICloud(completion: @escaping (_ result: Bool) -> Void) {
+    @objc public func migrateToICloud(completion: @escaping (_ result: Bool) -> Void) {
         self.migrateToICloudIfNeeded(
             modelName: self.modelName,
             containerURL: self.containerURL,
