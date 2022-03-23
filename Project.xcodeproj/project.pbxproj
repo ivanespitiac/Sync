@@ -491,6 +491,10 @@
 		2C98C7F627E4065400FB126A /* NSEntityDescription+PrimaryKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C98C7A027E4065300FB126A /* NSEntityDescription+PrimaryKey.swift */; };
 		2C98C7F727E4065400FB126A /* NSEntityDescription+PrimaryKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C98C7A027E4065300FB126A /* NSEntityDescription+PrimaryKey.swift */; };
 		2C98C7F827E4065400FB126A /* NSEntityDescription+PrimaryKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C98C7A027E4065300FB126A /* NSEntityDescription+PrimaryKey.swift */; };
+		2CE6767627EBD40A00E71CAE /* DataStack+iCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE6767527EBD40A00E71CAE /* DataStack+iCloud.swift */; };
+		2CE6767727EBD40A00E71CAE /* DataStack+iCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE6767527EBD40A00E71CAE /* DataStack+iCloud.swift */; };
+		2CE6767827EBD40A00E71CAE /* DataStack+iCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE6767527EBD40A00E71CAE /* DataStack+iCloud.swift */; };
+		2CE6767927EBD40A00E71CAE /* DataStack+iCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE6767527EBD40A00E71CAE /* DataStack+iCloud.swift */; };
 		445851BB1E87BAF50025434E /* DictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4458519C1E87BAF50025434E /* DictionaryTests.swift */; };
 		445851BC1E87BAF50025434E /* DictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4458519C1E87BAF50025434E /* DictionaryTests.swift */; };
 		445851BD1E87BAF50025434E /* DictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4458519C1E87BAF50025434E /* DictionaryTests.swift */; };
@@ -955,6 +959,7 @@
 		2C98C79C27E4065300FB126A /* Sync+NSManagedObjectContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sync+NSManagedObjectContext.swift"; sourceTree = "<group>"; };
 		2C98C79E27E4065300FB126A /* Inflections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Inflections.swift; sourceTree = "<group>"; };
 		2C98C7A027E4065300FB126A /* NSEntityDescription+PrimaryKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSEntityDescription+PrimaryKey.swift"; sourceTree = "<group>"; };
+		2CE6767527EBD40A00E71CAE /* DataStack+iCloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataStack+iCloud.swift"; sourceTree = "<group>"; };
 		4458519C1E87BAF50025434E /* DictionaryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryTests.swift; sourceTree = "<group>"; };
 		4458519D1E87BAF50025434E /* ExportTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExportTests.swift; sourceTree = "<group>"; };
 		4458519E1E87BAF50025434E /* FillWithDictionaryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FillWithDictionaryTests.swift; sourceTree = "<group>"; };
@@ -1475,6 +1480,7 @@
 			isa = PBXGroup;
 			children = (
 				2C98C78F27E4065300FB126A /* DataStack.swift */,
+				2CE6767527EBD40A00E71CAE /* DataStack+iCloud.swift */,
 			);
 			path = DataStack;
 			sourceTree = "<group>";
@@ -2235,6 +2241,7 @@
 				2C98C7C927E4065400FB126A /* NSManagedObject+PropertyMapperHelpers.swift in Sources */,
 				2C98C7A927E4065400FB126A /* NSManagedObject+Export.swift in Sources */,
 				2C98C7A127E4065400FB126A /* Logger.swift in Sources */,
+				2CE6767627EBD40A00E71CAE /* DataStack+iCloud.swift in Sources */,
 				2C98C7ED27E4065400FB126A /* Sync+NSManagedObjectContext.swift in Sources */,
 				2C98C7DD27E4065400FB126A /* NSManagedObjectContext+Sync.swift in Sources */,
 				2C98C7E527E4065400FB126A /* NSEntityDescription+Sync.swift in Sources */,
@@ -2264,6 +2271,7 @@
 				2C98C7CC27E4065400FB126A /* NSManagedObject+PropertyMapperHelpers.swift in Sources */,
 				2C98C7AC27E4065400FB126A /* NSManagedObject+Export.swift in Sources */,
 				2C98C7A427E4065400FB126A /* Logger.swift in Sources */,
+				2CE6767927EBD40A00E71CAE /* DataStack+iCloud.swift in Sources */,
 				2C98C7F027E4065400FB126A /* Sync+NSManagedObjectContext.swift in Sources */,
 				2C98C7E027E4065400FB126A /* NSManagedObjectContext+Sync.swift in Sources */,
 				2C98C7E827E4065400FB126A /* NSEntityDescription+Sync.swift in Sources */,
@@ -2293,6 +2301,7 @@
 				2C98C7CA27E4065400FB126A /* NSManagedObject+PropertyMapperHelpers.swift in Sources */,
 				2C98C7AA27E4065400FB126A /* NSManagedObject+Export.swift in Sources */,
 				2C98C7A227E4065400FB126A /* Logger.swift in Sources */,
+				2CE6767727EBD40A00E71CAE /* DataStack+iCloud.swift in Sources */,
 				2C98C7EE27E4065400FB126A /* Sync+NSManagedObjectContext.swift in Sources */,
 				2C98C7DE27E4065400FB126A /* NSManagedObjectContext+Sync.swift in Sources */,
 				2C98C7E627E4065400FB126A /* NSEntityDescription+Sync.swift in Sources */,
@@ -2322,6 +2331,7 @@
 				2C98C7CB27E4065400FB126A /* NSManagedObject+PropertyMapperHelpers.swift in Sources */,
 				2C98C7AB27E4065400FB126A /* NSManagedObject+Export.swift in Sources */,
 				2C98C7A327E4065400FB126A /* Logger.swift in Sources */,
+				2CE6767827EBD40A00E71CAE /* DataStack+iCloud.swift in Sources */,
 				2C98C7EF27E4065400FB126A /* Sync+NSManagedObjectContext.swift in Sources */,
 				2C98C7DF27E4065400FB126A /* NSManagedObjectContext+Sync.swift in Sources */,
 				2C98C7E727E4065400FB126A /* NSEntityDescription+Sync.swift in Sources */,
