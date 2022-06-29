@@ -10,6 +10,34 @@ import CoreData
 
 extension DataStack {
     
+    /**
+     Verify if the database has backup data in iCloud, and restore data and model from iCloud
+     
+     date: 29-06-2022
+     */
+    func hasBackup(name: String, containerURL: URL, model: NSManagedObjectModel) -> Bool {
+        let filePath = "\(name)iCloud.sqlite"
+        let storeURL = containerURL.appendingPathComponent(filePath)
+        let coordinator: NSPersistentStoreCoordinator = NSPersistentStoreCoordinator(managedObjectModel: model)
+        do {
+            try coordinator.addPersistentStore(
+                ofType: NSSQLiteStoreType,
+                configurationName: nil,
+                at: storeURL,
+                options: [NSPersistentStoreRebuildFromUbiquitousContentOption: true])
+            return true
+        } catch let error {
+            Logger.logError(with: "Error \(error)")
+            return false
+        }
+    }
+    
+    /**
+     Migrate local container to remote iCloud
+     verifiying if the container exist or not to create one
+     
+     date: 23-03-2022
+     */
     func migrateToICloudIfNeeded(modelName: String, containerURL: URL, model: NSManagedObjectModel, completion: @escaping (_ result: Bool) -> Void) {
         
         let filePath = "\(modelName).sqlite"
@@ -47,6 +75,11 @@ extension DataStack {
     }
         
  
+    /**
+     Migrate local container to remote iCloud
+     
+     date:23-03-2022
+     */
     func migrateToICloudFromStore(modelName: String, containerURL: URL, seedStore: NSPersistentStore, coordinator: NSPersistentStoreCoordinator, completion:  @escaping (_ result: Bool) -> Void) {
         let queue = OperationQueue()
         queue.addOperation({ () -> Void in
