@@ -411,6 +411,17 @@ import CoreData
             completion: completion)
     }
     
+    /**
+     Get the data and model from iCloud backup
+     */
+    @objc public func getICloudBackup() -> Bool {
+        let result = self.hasBackup(
+            name: self.modelName,
+            containerURL: self.containerURL,
+            model: self.model)
+        return result
+    }
+    
 }
 
 extension NSPersistentStoreCoordinator {
