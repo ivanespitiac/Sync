@@ -403,9 +403,9 @@ import CoreData
     /**
      Migration to iCloud func
      */
-    @objc public func migrateToICloud(completion: @escaping (_ result: Bool) -> Void) {
+    @objc public func migrateToICloud(modelName: String, completion: @escaping (_ result: Bool) -> Void) {
         self.migrateToICloudIfNeeded(
-            modelName: self.modelName,
+            modelName: modelName,
             containerURL: self.containerURL,
             model: self.model,
             completion: completion)
@@ -414,9 +414,9 @@ import CoreData
     /**
      Get the data and model from iCloud backup
      */
-    @objc public func getICloudBackup() -> Bool {
+    @objc public func getICloudBackup(modelName: String, ) -> Bool {
         let result = self.hasBackup(
-            name: self.modelName,
+            name: modelName,
             containerURL: self.containerURL,
             model: self.model)
         return result
