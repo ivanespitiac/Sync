@@ -414,7 +414,7 @@ import CoreData
     /**
      Get the data and model from iCloud backup
      */
-    @objc public func getICloudBackup(modelName: String, ) -> Bool {
+    @objc public func getICloudBackup(modelName: String) -> Bool {
         let result = self.hasBackup(
             name: modelName,
             containerURL: self.containerURL,
