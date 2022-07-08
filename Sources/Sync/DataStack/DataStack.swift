@@ -405,7 +405,8 @@ import CoreData
      */
     @objc public func migrateToICloud(modelName: String, completion: @escaping (_ result: Bool) -> Void) {
         self.migrateToICloudIfNeeded(
-            modelName: modelName,
+            modelName: self.modelName,
+            modelICloudName: modelName,
             containerURL: self.containerURL,
             model: self.model,
             completion: completion)

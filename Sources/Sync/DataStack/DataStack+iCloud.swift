@@ -38,7 +38,7 @@ extension DataStack {
      
      date: 23-03-2022
      */
-    func migrateToICloudIfNeeded(modelName: String, containerURL: URL, model: NSManagedObjectModel, completion: @escaping (_ result: Bool) -> Void) {
+    func migrateToICloudIfNeeded(modelName: String, modelICloudName: String,containerURL: URL, model: NSManagedObjectModel, completion: @escaping (_ result: Bool) -> Void) {
         
         let filePath = "\(modelName).sqlite"
         let seedStoreURL = containerURL.appendingPathComponent(filePath)
@@ -57,7 +57,7 @@ extension DataStack {
                     options: [NSMigratePersistentStoresAutomaticallyOption: true, NSInferMappingModelAutomaticallyOption: true])
                 
                 self.migrateToICloudFromStore(
-                    modelName: modelName,
+                    modelName: modelICloudName,
                     containerURL: containerURL,
                     seedStore: seedStore,
                     coordinator: coordinator) { result in
